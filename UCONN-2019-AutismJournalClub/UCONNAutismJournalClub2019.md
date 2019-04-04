@@ -80,7 +80,7 @@ Our 6 research questions
 2. What do the longitudinal trajectories of *parents'* language production look like?
 3. Do parents and children linguistically match each other in conversation?
 4. Which factors best predict child linguistic development?
-5. Are child-based or environmental factors more important to children' linguistic development (and how is this mediated by diagnosis)?
+5. Are child-based or environmental factors more important to children's linguistic development (and how is this mediated by diagnosis)?
 6. Do children and adults influence each other's later linguistic productions?
 
 Participants
