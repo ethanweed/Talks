@@ -1,0 +1,18 @@
+﻿ ;Word tokens;Word types;MLU
+R2m, R2;R2m = 0.59, R2 = 0.82;R2m = 0.68, R2 = 0.88;R2m = 0.67, R2 = 0.79
+Predictor; ; ; 
+Intercept;β = 571.90, SE = 29.47, t-stat = 19.41, p < 0.0001;β = 153.44, SE = 6.90, t-stat = 22.24, p < 0.0001;β = 2.21, SE = 0.05, t-stat = 43.02, p < 0.0001
+Visit;β = 272.65, SE = 29.56, t-stat = 9.22, p < 0.0001;β = 85.10, SE = 8.22, t-stat = 10.35, p < 0.0001;β = 0.59, SE = 0.06, t-stat = 9.19, p < 0.0001
+Visit2;β = -23.34, SE = 3.97, t-stat = -5.88, p < 0.0001;β = -7.48, SE = 1.12, t-stat = -6.71, p < 0.0001;β = -0.04, SE = 0.01, t-stat = -4.43, p < 0.0001
+Diagnosis;β = -134.77, SE = 41.37, t-stat = -3.26, p = 0.0017;β = -44.51, SE = 9.99, t-stat = -4.46, p < 0.0001;β = -0.33, SE = 0.07, t-stat = -4.54, p = 0.0015
+MSEL EL;β = 22.09, SE = 5.74, t-stat = 3.85, p = 0.0003;β = 4.51, SE = 1.30, t-stat = 3.47, p = 0.0009;β = 0.04, SE = 0.01, t-stat = 3.57, p = 0.0007
+Visit : Diagnosis;β = -51.34, SE = 14.15, t-stat = -3.63, p = 0.0005;β = -47.35, SE = 12.05, t-stat = -3.93, p = 0.0002;β = -0.19, SE = 0.03, t-stat = -7.18, p < 0.0001
+Visit : EL;β = 9.99, SE = 4.86, t-stat = 2.06, p = 0.0422;β = 1.78, SE = 1.02, t-stat = 1.74, p = 0.0851;β = 0.04, SE = 0.01, t-stat = 3.69, p = 0.0003
+Visit2 : Diagnosis;Not included;β = 4.30, SE = 1.63, t-stat = 2.63, p = 0.0102;Not Included
+Visit2 : EL;β = -2.16, SE = 0.63, t-stat = -3.41, p = 0.0010;β = -0.45, SE = 0.13, t-stat = -3.49, p = 0.0008;β = -0.01, SE = 0.00, t-stat = -4.97, p = 0.0001
+Diagnosis : EL;β = 18.84, SE = 6.94, t-stat = 2.71, p = 0.0084;β = 5.89, SE = 1.56, t-stat = 3.77, p = 0.0003;β = 0.06, SE = 0.01, t-stat = 4.76, p < 0.0001
+Diagnosis : EL : Visit;β = 8.65, SE = 2.37, t-stat = 3.65, p = 0.0005;β = 2.33, SE = 0.54, t-stat = 4.32, p = 0.0001;β = 0.02, SE = 0.00, t-stat = 3.52, p = 0.0007
+Random Effects;Child intercept SD: 162.82;Child intercept SD: 37.83;Child intercept SD: 0.26
+;Visit slope SD: 140.34;Visit slope SD: 29.85;Visit slope SD: 0.24
+;Visit2 slope SD: 18.77;Visit2 slope SD: 3.82;Visit2 slope SD: 0.04
+;Residual SD: 159.59;Residual SD: 32.25;Residual SD: 0.39

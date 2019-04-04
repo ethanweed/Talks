@@ -1,0 +1,242 @@
+Hearing me hearing you
+========================================================
+author: Fusaroli, Weed, Fein & Naigles
+date: 2019
+autosize: true
+incremental: true
+transition: none
+
+Our 6 research questions
+========================================================
+
+1. Longitudinal trajectories of language development: child-based factors
+2. Longitudinal trajectories of parental language production: child-based factors
+3. Parent-child matching in concurrent linguistic production: child-based factors
+4. Predicting child linguistic development: environmental factors
+5. Assessing the relative roles of child-based and environmental factors in child linguistic development
+6. Predicting parental linguistic production from child linguistic production: "Environmental" factors
+
+Participants
+========================================================
+```{r echo = FALSE}
+library(knitr)
+library(kableExtra)
+
+t1 <- read.csv("tables/table1.csv", sep = ";")
+t1 <- plyr::rename(t1, c("TD.Mean..95..CI." = "TD Mean (95% CI) ", "ASD.Mean" = "ASD Mean", "β..SE." = "β (SE)", "t.z.stats" = "t/z stats"))
+
+kable(t1) %>%
+  kable_styling(bootstrap_options = c("striped", "hover", "condensed", "responsive")) %>%
+  scroll_box(width = "100%", height = "500px")
+
+```
+
+
+Modelling language development
+========================================================
+incremental: false
+We modelled language development using mixed-effects growth curves: multi-level models accounting for intercepts and slopes at individual and group levels, and including a non-linear term for changes over time.
+
+$$ Linguistic Feature = \beta_{0i} + $$
+$$\beta_{1i}Visit + $$
+$$\beta_{2i}Visit^2 + $$
+$$\beta_{3}Diagnosis + $$
+$$\beta_{4}ExpressiveLanguage + $$
+$$\beta_{5}VisualReception + \epsilon $$ 
+
+
+
+Q1: Development of children's language
+========================================================
+
+To what extent is this development related to child-based factors of initial language level, nonverbal cognition, and autism symptomatology?
+
+
+Q1: Tokens (number of words)
+========================================================
+![alt text](figures/Figure1a.tiff)
+
+
+Q1: Types (vocabulary)
+========================================================
+![alt text](figures/Figure1b.tiff)
+
+Q1: MLU (complexity)
+========================================================
+![alt text](figures/Figure1c.tiff)
+
+Development of children's language
+========================================================
+```{r echo = FALSE}
+library(knitr)
+library(kableExtra)
+
+t2 <- read.csv("tables/table2.csv", sep = ";")
+t2 <- plyr::rename(t2, c("X" = " "))
+
+kable(t2) %>%
+  kable_styling(bootstrap_options = c("striped", "hover", "condensed", "responsive")) %>%
+  scroll_box(width = "100%", height = "500px")
+
+```
+
+
+ADOS not an important predictor (BIC)
+========================================================
+```{r echo = FALSE}
+library(knitr)
+library(kableExtra)
+
+t3 <- read.csv("tables/table3.csv", sep = ";")
+t3 <- plyr::rename(t3, c("X" = " "))
+
+kable(t3) %>%
+  kable_styling(bootstrap_options = c("striped", "hover", "condensed", "responsive")) %>%
+  scroll_box(width = "100%", height = "500px")
+
+```
+
+
+Q2: "Development" of parental language
+========================================================
+To what extent are the changes observed in the parents’ language use influenced by the same child factors?
+
+
+Q2: Tokens (number of words)
+========================================================
+```{r echo=FALSE, out.width= "80%", fig.align="center"}
+knitr::include_graphics("figures/Figure2a.tiff")
+```
+
+
+Q2: Types (vocabulary)
+========================================================
+```{r echo=FALSE, out.width= "80%", fig.align="center"}
+knitr::include_graphics("figures/Figure2b.tiff")
+```
+
+
+Q2: MLU (complexity)
+========================================================
+```{r echo=FALSE, out.width= "80%", fig.align="center"}
+knitr::include_graphics("figures/Figure2c.tiff")
+```
+
+
+Development of parents's language
+========================================================
+```{r echo = FALSE}
+library(knitr)
+library(kableExtra)
+
+t4 <- read.csv("tables/table4.csv", sep = ";")
+t4 <- plyr::rename(t4, c("X" = " "))
+
+kable(t4) %>%
+  kable_styling(bootstrap_options = c("striped", "hover", "condensed", "responsive")) %>%
+  scroll_box(width = "100%", height = "500px")
+
+```
+
+
+ADOS not an important predictor
+========================================================
+```{r echo = FALSE}
+library(knitr)
+library(kableExtra)
+
+t5 <- read.csv("tables/table5.csv", sep = ";")
+t5 <- plyr::rename(t5, c("X" = " "))
+
+kable(t5) %>%
+  kable_styling(bootstrap_options = c("striped", "hover", "condensed", "responsive")) %>%
+  scroll_box(width = "100%", height = "500px")
+
+```
+
+
+Q3 Parent-child Linguistic Matching
+========================================================
+Do parents and children match each other during conversation, and what factors play a role?
+
+Q3: Parent-child matching (Tokens)
+========================================================
+```{r echo=FALSE, out.width= "50%", fig.align="center"}
+knitr::include_graphics("figures/Figure3a.tiff")
+```
+
+
+Q3: Parent-child matching (Types)
+========================================================
+```{r echo=FALSE, out.width= "50%", fig.align="center"}
+knitr::include_graphics("figures/Figure3b.tiff")
+```
+
+
+Q3: Parent-child matching (MLU)
+========================================================
+```{r echo=FALSE, out.width= "50%", fig.align="center"}
+knitr::include_graphics("figures/Figure3c.tiff")
+```
+
+Parent-child matching
+========================================================
+```{r echo = FALSE}
+library(knitr)
+library(kableExtra)
+
+t6 <- read.csv("tables/table6.csv", sep = ";")
+t6 <- plyr::rename(t6, c("X" = " "))
+
+kable(t6) %>%
+  kable_styling(bootstrap_options = c("striped", "hover", "condensed", "responsive")) %>%
+  scroll_box(width = "100%", height = "500px")
+
+```
+
+Influence of parental language on later child language
+========================================================
+```{r echo = FALSE}
+library(knitr)
+library(kableExtra)
+
+t7 <- read.csv("tables/table7.csv", sep = ";")
+t7 <- plyr::rename(t7, c("X" = " "))
+
+kable(t7) %>%
+  kable_styling(bootstrap_options = c("striped", "hover", "condensed", "responsive")) %>%
+  scroll_box(width = "100%", height = "500px")
+
+```
+
+Influence of children's language on later parent language
+========================================================
+```{r echo = FALSE}
+library(knitr)
+library(kableExtra)
+
+t9 <- read.csv("tables/table9.csv", sep = ";")
+t9 <- plyr::rename(t9, c("X" = " "))
+
+kable(t9) %>%
+  kable_styling(bootstrap_options = c("striped", "hover", "condensed", "responsive")) %>%
+  scroll_box(width = "100%", height = "500px")
+
+```
+
+Conclusions
+========================================================
+
+
+========================================================
+
+
+========================================================
+
+
+========================================================
+
+
+========================================================
+
+

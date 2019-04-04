@@ -1,0 +1,14 @@
+﻿ ;Word tokens;Word types;MLU
+R2m, R2;R2m = 0.5, R2 = 0.81;R2m = 0.72, R2 = 0.91;R2m = 0.59, R2 = 0.75
+Predictor; ; ; 
+Intercept;β = 372.71, SE = 26.30, t-stat = 14.17, p < 0.0001;β = 109.01, SE = 6.83, t-stat = 15.95, p < 0.0001;β = 1.84, SE = 0.06, t-stat = 31.70, p < 0.0001
+ADOS;Not Included;Not Included;Not Included
+Visit;β = 44.43, SE = 9.07, t-stat = 4.90, p < 0.0001;β = 37.82, SE = 8.29, t-stat = 4.56, p = 0.0001;β = 0.11, SE = 0.02, t-stat = 5.16, p < 0.0001
+Visit2;Not Included;β = -3.19, SE = 1.01, t-stat = -3.15, p = 0.0027;Not Included
+MSEL EL;β = 30.66, SE = 2.72, t-stat = 11.26, p < 0.0001;β = 10.41, SE = 0.93, t-stat = 11.19, p < 0.0001;β = 0.08, SE = 0.01, t-stat = 10.83, p < 0.0001
+Visit : EL;Not Included;β = 4.15, SE = 1.13, t-stat = 3.68, p = 0.0007;Not Included
+Visit2 : EL;Not Included;β = -0.46, SE = 0.14, t-stat = -3.35, p = 0.0015;Not Included
+Random effects;Child intercept SD: 165.62;Child intercept SD: 36.12;Child intercept SD: 0.28
+;Visit slope SD: 166.72;Visit slope SD: 31.18;Visit slope SD: 0.39
+;Visit2 slope SD: 17.61;Visit2 slope SD: 2.98;Visit2 slope SD: 0.05
+;Residual SD: 145.52;Residual SD: 28.69;Residual SD: 0.42

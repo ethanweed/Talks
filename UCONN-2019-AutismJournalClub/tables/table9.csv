@@ -1,0 +1,12 @@
+﻿ ;Parental word tokens;Parental word types;Parental MLU
+R2m, R2;R2m = 0.61, R2 = 0.64;R2m = 0.2, R2 = 0.62;R2m = 0.49, R2 = 0.53
+Predictor;;;
+Intercept;β = 2334.06, SE = 25.31, t-stat = 92.22, p < 0.0001;β = 462.65, SE = 7.91, t-stat = 58.45, p < 0.0001;β = 4.19, SE = 0.04, t-stat = 100.08, p < 0.0001
+Diagnosis;Not Included;Not Included;β = -0.22, SE = 0.07, t-stat = -3.41, p = 0.003
+Parental performance in the previous visit (same index as the outcome);β = 0.74, SE = 0.04, t-stat = 20.92, p < 0.0001;β = 0.34, SE = 0.05, t-stat = 6.91, p < 0.0001;β = 0.47, SE = 0.04, t-stat = 10.52, p < 0.0001
+Child word tokens;Not Included;Not Included;β = 0.00001, SE = 0.0001, t-stat = 0.01, p = 0.99
+Child word types;Not Included;Not Included;Not Included
+Child MLU;Not Included;β = 16.6, SE = 5.45, t-stat = 3.04, p = 0.0025;Not Included
+Child word tokens: Diagnosis;Not Included;Not Included;β = 0.001, SE = 0.0002, t-stat = 3.94, p = 0.0002
+Random effects;Child Intercept SD: 111.78;Child Intercept SD: 59.81;Child Intercept SD: 0.13
+;Residual SD: 389.39;Residual SD: 57.17;Residual SD: 0.46
