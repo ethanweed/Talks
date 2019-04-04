@@ -1,3 +1,32 @@
+<style>
+
+h1, h2, h3, h4, h5, h6{
+  line-height: 30px; 
+}
+
+
+.reveal .slides section .column {
+
+  position: absolute;
+
+  width: 48%;
+
+  top: 2.5em;
+
+  bottom: 0;
+
+  margin: auto;
+
+}
+
+
+.reveal h1, .reveal h2, .reveal h3 {
+  word-wrap: normal;
+  -moz-hyphens: none;
+}
+</style>
+
+
 Hearing me hearing you
 ========================================================
 author: Fusaroli, Weed, Fein & Naigles
@@ -6,28 +35,66 @@ autosize: true
 incremental: true
 transition: none
 
+
+
+Language learning: it's complicated!
+========================================================
+
+1. Child-based factors
+1. Environmental factors
+
+Which factors do researchers focus on?
+========================================================
+<br>
+<br>
+**TD children**
+
+- Environmental factors
+
+1. Quantity of parents' input
+1. Quality of parents' input
+1. Socio-economic status
+1. etc..
+
+***
+<br>
+<br>
+**Children with ASD**
+
+- Child-based factors
+
+1. IQ
+1. Symptom severity
+1. Expressive language measures
+1. Social skills measures
+1. etc..
+
+Goal
+========================================================
+Try to model as much of the complexity as we can.
+
 Our 6 research questions
 ========================================================
 
-1. Longitudinal trajectories of language development: child-based factors
-2. Longitudinal trajectories of parental language production: child-based factors
-3. Parent-child matching in concurrent linguistic production: child-based factors
-4. Predicting child linguistic development: environmental factors
-5. Assessing the relative roles of child-based and environmental factors in child linguistic development
-6. Predicting parental linguistic production from child linguistic production: "Environmental" factors
+1. What do the longitudinal trajectories of *children's* language development look like?
+2. What do the longitudinal trajectories of *parents'* language production look like?
+3. Do parents and children linguistically match each other in conversation?
+4. Which factors best predict child linguistic development?
+5. Are child-based or environmental factors more important to children' linguistic development (and how is this mediated by diagnosis)?
+6. Do children and adults influence each other's later linguistic productions?
 
 Participants
 ========================================================
-<div style="border: 1px solid #ddd; padding: 5px; overflow-y: scroll; height:500px; overflow-x: scroll; width:100%; "><table class="table table-striped table-hover table-condensed table-responsive" style="margin-left: auto; margin-right: auto;">
+<div style="border: 1px solid #ddd; padding: 0px; overflow-y: scroll; height:500px; overflow-x: scroll; width:100%; "><table class="table table-striped table-hover table-condensed table-responsive" style="margin-left: auto; margin-right: auto;">
  <thead>
   <tr>
-   <th style="text-align:left;"> Variable </th>
-   <th style="text-align:left;"> TD Mean (95% CI)  </th>
-   <th style="text-align:left;"> ASD Mean </th>
-   <th style="text-align:left;"> β (SE) </th>
-   <th style="text-align:left;"> t/z stats </th>
-   <th style="text-align:left;"> p </th>
-   <th style="text-align:right;"> R2 </th>
+   <th style="text-align:left;position: sticky; top:0; background-color: #FFFFFF;"> Variable </th>
+   <th style="text-align:left;position: sticky; top:0; background-color: #FFFFFF;"> TD Mean (95% CI)  </th>
+   <th style="text-align:left;position: sticky; top:0; background-color: #FFFFFF;"> ASD Mean </th>
+   <th style="text-align:left;position: sticky; top:0; background-color: #FFFFFF;"> β (SE) </th>
+   <th style="text-align:left;position: sticky; top:0; background-color: #FFFFFF;"> t/z stats </th>
+   <th style="text-align:left;position: sticky; top:0; background-color: #FFFFFF;"> p </th>
+   <th style="text-align:right;position: sticky; top:0; background-color: #FFFFFF;"> R2 </th>
   </tr>
  </thead>
 <tbody>
@@ -127,7 +194,7 @@ Participants
 
 Modelling language development
 ========================================================
-incremental: false
+
 We modelled language development using mixed-effects growth curves: multi-level models accounting for intercepts and slopes at individual and group levels, and including a non-linear term for changes over time.
 
 $$ Linguistic Feature = \beta_{0i} + $$
@@ -141,8 +208,7 @@ $$\beta_{5}VisualReception + \epsilon $$
 
 Q1: Development of children's language
 ========================================================
-
-To what extent is this development related to child-based factors of initial language level, nonverbal cognition, and autism symptomatology?
+What do the longitudinal trajectories of *children's* language development look like?
 
 
 Q1: Tokens (number of words)
@@ -160,13 +226,13 @@ Q1: MLU (complexity)
 
 Development of children's language
 ========================================================
-<div style="border: 1px solid #ddd; padding: 5px; overflow-y: scroll; height:500px; overflow-x: scroll; width:100%; "><table class="table table-striped table-hover table-condensed table-responsive" style="margin-left: auto; margin-right: auto;">
+<div style="border: 1px solid #ddd; padding: 0px; overflow-y: scroll; height:500px; overflow-x: scroll; width:100%; "><table class="table table-striped table-hover table-condensed table-responsive" style="margin-left: auto; margin-right: auto;">
  <thead>
   <tr>
-   <th style="text-align:left;">   </th>
-   <th style="text-align:left;"> Word.tokens </th>
-   <th style="text-align:left;"> Word.types </th>
-   <th style="text-align:left;"> MLU </th>
+   <th style="text-align:left;position: sticky; top:0; background-color: #FFFFFF;">   </th>
+   <th style="text-align:left;position: sticky; top:0; background-color: #FFFFFF;"> Word.tokens </th>
+   <th style="text-align:left;position: sticky; top:0; background-color: #FFFFFF;"> Word.types </th>
+   <th style="text-align:left;position: sticky; top:0; background-color: #FFFFFF;"> MLU </th>
   </tr>
  </thead>
 <tbody>
@@ -278,13 +344,13 @@ Development of children's language
 
 ADOS not an important predictor (BIC)
 ========================================================
-<div style="border: 1px solid #ddd; padding: 5px; overflow-y: scroll; height:500px; overflow-x: scroll; width:100%; "><table class="table table-striped table-hover table-condensed table-responsive" style="margin-left: auto; margin-right: auto;">
+<div style="border: 1px solid #ddd; padding: 0px; overflow-y: scroll; height:500px; overflow-x: scroll; width:100%; "><table class="table table-striped table-hover table-condensed table-responsive" style="margin-left: auto; margin-right: auto;">
  <thead>
   <tr>
-   <th style="text-align:left;">   </th>
-   <th style="text-align:left;"> Word.tokens </th>
-   <th style="text-align:left;"> Word.types </th>
-   <th style="text-align:left;"> MLU </th>
+   <th style="text-align:left;position: sticky; top:0; background-color: #FFFFFF;">   </th>
+   <th style="text-align:left;position: sticky; top:0; background-color: #FFFFFF;"> Word.tokens </th>
+   <th style="text-align:left;position: sticky; top:0; background-color: #FFFFFF;"> Word.types </th>
+   <th style="text-align:left;position: sticky; top:0; background-color: #FFFFFF;"> MLU </th>
   </tr>
  </thead>
 <tbody>
@@ -372,7 +438,7 @@ ADOS not an important predictor (BIC)
 
 Q2: "Development" of parental language
 ========================================================
-To what extent are the changes observed in the parents’ language use influenced by the same child factors?
+What do the longitudinal trajectories of *parents'* language production look like?
 
 
 Q2: Tokens (number of words)
@@ -392,13 +458,13 @@ Q2: MLU (complexity)
 
 Development of parents's language
 ========================================================
-<div style="border: 1px solid #ddd; padding: 5px; overflow-y: scroll; height:500px; overflow-x: scroll; width:100%; "><table class="table table-striped table-hover table-condensed table-responsive" style="margin-left: auto; margin-right: auto;">
+<div style="border: 1px solid #ddd; padding: 0px; overflow-y: scroll; height:500px; overflow-x: scroll; width:100%; "><table class="table table-striped table-hover table-condensed table-responsive" style="margin-left: auto; margin-right: auto;">
  <thead>
   <tr>
-   <th style="text-align:left;">   </th>
-   <th style="text-align:left;"> Word.tokens </th>
-   <th style="text-align:left;"> Word.types </th>
-   <th style="text-align:left;"> MLU </th>
+   <th style="text-align:left;position: sticky; top:0; background-color: #FFFFFF;">   </th>
+   <th style="text-align:left;position: sticky; top:0; background-color: #FFFFFF;"> Word.tokens </th>
+   <th style="text-align:left;position: sticky; top:0; background-color: #FFFFFF;"> Word.types </th>
+   <th style="text-align:left;position: sticky; top:0; background-color: #FFFFFF;"> MLU </th>
   </tr>
  </thead>
 <tbody>
@@ -474,13 +540,13 @@ Development of parents's language
 
 ADOS not an important predictor
 ========================================================
-<div style="border: 1px solid #ddd; padding: 5px; overflow-y: scroll; height:500px; overflow-x: scroll; width:100%; "><table class="table table-striped table-hover table-condensed table-responsive" style="margin-left: auto; margin-right: auto;">
+<div style="border: 1px solid #ddd; padding: 0px; overflow-y: scroll; height:500px; overflow-x: scroll; width:100%; "><table class="table table-striped table-hover table-condensed table-responsive" style="margin-left: auto; margin-right: auto;">
  <thead>
   <tr>
-   <th style="text-align:left;">   </th>
-   <th style="text-align:left;"> Word.tokens </th>
-   <th style="text-align:left;"> Word.types </th>
-   <th style="text-align:left;"> MLU </th>
+   <th style="text-align:left;position: sticky; top:0; background-color: #FFFFFF;">   </th>
+   <th style="text-align:left;position: sticky; top:0; background-color: #FFFFFF;"> Word.tokens </th>
+   <th style="text-align:left;position: sticky; top:0; background-color: #FFFFFF;"> Word.types </th>
+   <th style="text-align:left;position: sticky; top:0; background-color: #FFFFFF;"> MLU </th>
   </tr>
  </thead>
 <tbody>
@@ -574,13 +640,13 @@ Q3: Parent-child matching (MLU)
 
 Parent-child matching
 ========================================================
-<div style="border: 1px solid #ddd; padding: 5px; overflow-y: scroll; height:500px; overflow-x: scroll; width:100%; "><table class="table table-striped table-hover table-condensed table-responsive" style="margin-left: auto; margin-right: auto;">
+<div style="border: 1px solid #ddd; padding: 0px; overflow-y: scroll; height:500px; overflow-x: scroll; width:100%; "><table class="table table-striped table-hover table-condensed table-responsive" style="margin-left: auto; margin-right: auto;">
  <thead>
   <tr>
-   <th style="text-align:left;">   </th>
-   <th style="text-align:left;"> Parental.word.tokens </th>
-   <th style="text-align:left;"> Parental.word.types </th>
-   <th style="text-align:left;"> Parental.MLU </th>
+   <th style="text-align:left;position: sticky; top:0; background-color: #FFFFFF;">   </th>
+   <th style="text-align:left;position: sticky; top:0; background-color: #FFFFFF;"> Parental.word.tokens </th>
+   <th style="text-align:left;position: sticky; top:0; background-color: #FFFFFF;"> Parental.word.types </th>
+   <th style="text-align:left;position: sticky; top:0; background-color: #FFFFFF;"> Parental.MLU </th>
   </tr>
  </thead>
 <tbody>
@@ -667,13 +733,13 @@ Parent-child matching
 
 Influence of parental language on later child language
 ========================================================
-<div style="border: 1px solid #ddd; padding: 5px; overflow-y: scroll; height:500px; overflow-x: scroll; width:100%; "><table class="table table-striped table-hover table-condensed table-responsive" style="margin-left: auto; margin-right: auto;">
+<div style="border: 1px solid #ddd; padding: 0px; overflow-y: scroll; height:500px; overflow-x: scroll; width:100%; "><table class="table table-striped table-hover table-condensed table-responsive" style="margin-left: auto; margin-right: auto;">
  <thead>
   <tr>
-   <th style="text-align:left;">   </th>
-   <th style="text-align:left;"> Child.word.tokens </th>
-   <th style="text-align:left;"> Child.word.types </th>
-   <th style="text-align:left;"> Child.MLU </th>
+   <th style="text-align:left;position: sticky; top:0; background-color: #FFFFFF;">   </th>
+   <th style="text-align:left;position: sticky; top:0; background-color: #FFFFFF;"> Child.word.tokens </th>
+   <th style="text-align:left;position: sticky; top:0; background-color: #FFFFFF;"> Child.word.types </th>
+   <th style="text-align:left;position: sticky; top:0; background-color: #FFFFFF;"> Child.MLU </th>
   </tr>
  </thead>
 <tbody>
@@ -754,13 +820,13 @@ Influence of parental language on later child language
 
 Influence of children's language on later parent language
 ========================================================
-<div style="border: 1px solid #ddd; padding: 5px; overflow-y: scroll; height:500px; overflow-x: scroll; width:100%; "><table class="table table-striped table-hover table-condensed table-responsive" style="margin-left: auto; margin-right: auto;">
+<div style="border: 1px solid #ddd; padding: 0px; overflow-y: scroll; height:500px; overflow-x: scroll; width:100%; "><table class="table table-striped table-hover table-condensed table-responsive" style="margin-left: auto; margin-right: auto;">
  <thead>
   <tr>
-   <th style="text-align:left;">   </th>
-   <th style="text-align:left;"> Parental.word.tokens </th>
-   <th style="text-align:left;"> Parental.word.types </th>
-   <th style="text-align:left;"> Parental.MLU </th>
+   <th style="text-align:left;position: sticky; top:0; background-color: #FFFFFF;">   </th>
+   <th style="text-align:left;position: sticky; top:0; background-color: #FFFFFF;"> Parental.word.tokens </th>
+   <th style="text-align:left;position: sticky; top:0; background-color: #FFFFFF;"> Parental.word.types </th>
+   <th style="text-align:left;position: sticky; top:0; background-color: #FFFFFF;"> Parental.MLU </th>
   </tr>
  </thead>
 <tbody>
@@ -833,19 +899,24 @@ Influence of children's language on later parent language
 </tbody>
 </table></div>
 
-Conclusions
+Our 6 major findings
+========================================================
+- Children’s production of word types, tokens, and MLU increased across visits, and were predicted by their Expressive Language EL (positively) and diagnosis (negatively) from Visit 1. 
+- Parents’ production also increased across visits, and was predicted by their child’s **nonverbal cognition** (positively) and **diagnosis** (negatively) from Visit 1. 
+- At all visits and across groups, **children and parents matched each other** in lexical and syntactic production.
+
+Our 6 major findings 
 ========================================================
 
+- Parents who produced **longer MLUs** during a given visit had children who produced more word types and tokens, and had longer MLUs, at the subsequent visit.
+- When both **child EL** at Visit 1 and **parent MLU** were included in the model, both contributed significantly to future child language. However, EL accounted for a greater proportion of the variance.
+- Finally, children’s speech significantly predicted parent speech at the next visit.
 
+Share and enjoy!
 ========================================================
+Data and code are available online at
+[OSF](https://osf.io/u42dq/ "OSF")
 
 
-========================================================
-
-
-========================================================
-
-
-========================================================
 
 

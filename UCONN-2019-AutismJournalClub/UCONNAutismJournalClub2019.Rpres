@@ -1,3 +1,32 @@
+<style>
+
+h1, h2, h3, h4, h5, h6{
+  line-height: 30px; 
+}
+
+
+.reveal .slides section .column {
+
+  position: absolute;
+
+  width: 48%;
+
+  top: 2.5em;
+
+  bottom: 0;
+
+  margin: auto;
+
+}
+
+
+.reveal h1, .reveal h2, .reveal h3 {
+  word-wrap: normal;
+  -moz-hyphens: none;
+}
+</style>
+
+
 Hearing me hearing you
 ========================================================
 author: Fusaroli, Weed, Fein & Naigles
@@ -6,15 +35,53 @@ autosize: true
 incremental: true
 transition: none
 
+
+
+Language learning: it's complicated!
+========================================================
+
+1. Child-based factors
+1. Environmental factors
+
+Which factors do researchers focus on?
+========================================================
+<br>
+<br>
+**TD children**
+
+- Environmental factors
+
+1. Quantity of parents' input
+1. Quality of parents' input
+1. Socio-economic status
+1. etc..
+
+***
+<br>
+<br>
+**Children with ASD**
+
+- Child-based factors
+
+1. IQ
+1. Symptom severity
+1. Expressive language measures
+1. Social skills measures
+1. etc..
+
+Goal
+========================================================
+Try to model as much of the complexity as we can.
+
 Our 6 research questions
 ========================================================
 
-1. Longitudinal trajectories of language development: child-based factors
-2. Longitudinal trajectories of parental language production: child-based factors
-3. Parent-child matching in concurrent linguistic production: child-based factors
-4. Predicting child linguistic development: environmental factors
-5. Assessing the relative roles of child-based and environmental factors in child linguistic development
-6. Predicting parental linguistic production from child linguistic production: "Environmental" factors
+1. What do the longitudinal trajectories of *children's* language development look like?
+2. What do the longitudinal trajectories of *parents'* language production look like?
+3. Do parents and children linguistically match each other in conversation?
+4. Which factors best predict child linguistic development?
+5. Are child-based or environmental factors more important to children' linguistic development (and how is this mediated by diagnosis)?
+6. Do children and adults influence each other's later linguistic productions?
 
 Participants
 ========================================================
@@ -34,7 +101,7 @@ kable(t1) %>%
 
 Modelling language development
 ========================================================
-incremental: false
+
 We modelled language development using mixed-effects growth curves: multi-level models accounting for intercepts and slopes at individual and group levels, and including a non-linear term for changes over time.
 
 $$ Linguistic Feature = \beta_{0i} + $$
@@ -48,8 +115,7 @@ $$\beta_{5}VisualReception + \epsilon $$
 
 Q1: Development of children's language
 ========================================================
-
-To what extent is this development related to child-based factors of initial language level, nonverbal cognition, and autism symptomatology?
+What do the longitudinal trajectories of *children's* language development look like?
 
 
 Q1: Tokens (number of words)
@@ -94,12 +160,13 @@ kable(t3) %>%
   kable_styling(bootstrap_options = c("striped", "hover", "condensed", "responsive")) %>%
   scroll_box(width = "100%", height = "500px")
 
+
 ```
 
 
 Q2: "Development" of parental language
 ========================================================
-To what extent are the changes observed in the parents’ language use influenced by the same child factors?
+What do the longitudinal trajectories of *parents'* language production look like?
 
 
 Q2: Tokens (number of words)
@@ -224,19 +291,24 @@ kable(t9) %>%
 
 ```
 
-Conclusions
+Our 6 major findings
+========================================================
+- Children’s production of word types, tokens, and MLU increased across visits, and were predicted by their Expressive Language EL (positively) and diagnosis (negatively) from Visit 1. 
+- Parents’ production also increased across visits, and was predicted by their child’s **nonverbal cognition** (positively) and **diagnosis** (negatively) from Visit 1. 
+- At all visits and across groups, **children and parents matched each other** in lexical and syntactic production.
+
+Our 6 major findings 
 ========================================================
 
+- Parents who produced **longer MLUs** during a given visit had children who produced more word types and tokens, and had longer MLUs, at the subsequent visit.
+- When both **child EL** at Visit 1 and **parent MLU** were included in the model, both contributed significantly to future child language. However, EL accounted for a greater proportion of the variance.
+- Finally, children’s speech significantly predicted parent speech at the next visit.
 
+Share and enjoy!
 ========================================================
+Data and code are available online at
+[OSF](https://osf.io/u42dq/ "OSF")
 
 
-========================================================
-
-
-========================================================
-
-
-========================================================
 
 
