@@ -1,0 +1,239 @@
+<style>
+h1, h2, h3, h4, h5, h6{
+  line-height: 30px; 
+}
+
+
+.reveal .slides section .column {
+
+  position: absolute;
+
+  width: 48%;
+
+  top: 2.5em;
+
+  bottom: 0;
+
+  margin: auto;
+
+}
+
+
+.reveal h1, .reveal h2, .reveal h3 {
+  word-wrap: normal;
+  -moz-hyphens: none;
+}
+</style>
+
+My ABR Project
+========================================================
+author: Ethan Weed
+date: 
+autosize: true
+
+My dyslexia projects
+========================================================
+
+
+
+- Expanding dyslexia definition in Denmark
+- Measuring reading comprehension in adults
+- Music-training intervention in school-age children
+
+
+```{r echo=FALSE}
+# set-up an preparation
+# clear global environment
+rm(list=ls())
+
+# clear all plots (close the current graphical device)
+#dev.off()
+
+pathin ='/Users/ethan/Documents/GitHub/RSC/Dyslexia-tests/data/'
+
+setwd(pathin)
+
+file = 'RSC-data.csv'
+df = read.csv(file, sep = ';')
+
+library(ggplot2)
+
+#LVU <- subset(df, Studietype == "LVU")
+#MVU <- subset(df, Studietype == "MVU")
+
+min.mean.sd.max <- function(x) {
+  r <- c(min(x), mean(x) - sd(x), mean(x), mean(x) + sd(x), max(x))
+  names(r) <- c("ymin", "lower", "middle", "upper", "ymax")
+  r
+}
+
+df$Farve <- ordered(df$Farve, levels=c("Kontrol", "grøn", "gul", "rød"))
+```
+
+
+High-frequency wordlist reading
+========================================================
+```{r echo=FALSE}
+# HF word-reading
+score <- df$El.ord.Rigtige.10sek
+ggplot(df, aes(Farve, score, fill = Farve, message= FALSE, warnings = FALSE)) +
+  stat_summary(fun.data = min.mean.sd.max, geom = "boxplot", na.rm=TRUE)  +
+  geom_jitter(position = position_jitter(width=.1), size=2, na.rm=TRUE) + 
+  ggtitle("Højfrekvente ord (Elbros ordlist korrekt/10 sec)") +
+  xlab("Gruppe") +
+  scale_fill_manual(name = "X", values = c("white", "green", "yellow", "red"), guide = FALSE) +
+  scale_y_continuous(limits = c(1, 11))
+
+
+
+```
+***
+
+- you (du)
+- arrow (pil)
+- tree (træ)
+
+
+Low-frequency wordlist reading
+========================================================
+```{r, echo=FALSE}
+
+# Low-frequency word reading
+score <- df$Ak.ord.30.Rigtige.10sek
+ggplot(df, aes(Farve, score, fill = Farve)) +
+  stat_summary(fun.data = min.mean.sd.max, geom = "boxplot", na.rm=TRUE) + 
+  geom_jitter(position=position_jitter(width=.1), size=2, na.rm=TRUE) + 
+  ggtitle("Lavfrekvente ord korrekte / 10sec") +
+  xlab("Gruppe") +
+  scale_fill_manual(name = "Academic words / 10sec", values = c("white", "green", "yellow", "red"), guide = FALSE) +
+  scale_y_continuous(limits = c(1, 11))
+
+```
+***
+
+- Irrelevance (irrelevans)
+- Criteria (kriteria)
+- Apoplectic (apoplektisk)
+
+
+Pseudo-word reading
+========================================================
+```{r, echo=FALSE}
+#Pseudo-word reading
+score <- df$El.nonord.Rigtige.10sek
+ggplot(df, aes(Farve, score, fill = Farve)) +
+  stat_summary(fun.data = min.mean.sd.max, geom = "boxplot", na.rm=TRUE) + 
+  geom_jitter(position=position_jitter(width=.1), size=2, na.rm=TRUE) + 
+  ggtitle("Pseudo-ord korrekte / 10sec") +
+  xlab("Gruppe") +
+  scale_fill_manual(name = "Academic words / 10sec", values = c("white", "green", "yellow", "red"), guide = FALSE) +
+  scale_y_continuous(limits = c(1, 11))
+
+
+```
+***
+- køm
+- græ
+- dri
+
+
+Reading
+========================================================
+```{r, echo=FALSE}
+
+knitr::include_graphics("simple-reading.pdf")
+
+```
+
+Reading
+========================================================
+```{r, echo=FALSE}
+
+knitr::include_graphics("simple-reading-phono.pdf")
+
+```
+
+Reading
+========================================================
+```{r, echo=FALSE}
+
+knitr::include_graphics("simple-reading-phono-back.pdf")
+
+```
+
+ABR and literacy in children (12 years old)
+========================================================
+```{r, echo=FALSE}
+
+knitr::include_graphics("Neef-2017-correlations.png")
+
+
+```
+Neef, N. E., Schaadt, G., & Friederici, A. D. (2017). Auditory brainstem responses to stop consonants predict literacy. Clin Neurophysiol, 128(3), 484-494
+
+ABR and literacy and phonology
+========================================================
+
+## In children
+
+- age 
+- sex (e.g. Quinn and Wagner, 2015)
+- familial risk (Pennington and Lefly, 2001)
+- parental education (e.g. Friend et al., 2008)
+- intelligence (e.g. Hatcher and Hulme, 1999)
+- phonological awareness (e.g. Wagner and Torgesen, 1987)
+
+***
+## In adults
+
+- Reading history (ARHQ-R)
+- Reading:
+	- Word-reading
+	- Reading comprehension
+- EEG:
+  - ABR
+  - ERP
+- Working memory
+	- N-back
+	- Digit span
+
+
+
+ABR and literacy in adults
+========================================================
+"Easy" question to start with: Does delta cross-phase predict with phonological awareness measures in adults?
+Measures:
+
+1. ABR
+2. Dyslexia test results
+
+My equipment
+========================================================
+
+```{r, echo=FALSE}
+
+knitr::include_graphics("EEG.JPG")
+```
+
+
+My lab
+========================================================
+
+```{r, echo=FALSE}
+
+knitr::include_graphics("EEG-and-bike.JPG")
+```
+
+
+My /da/
+========================================================
+```{r, echo=FALSE}
+
+knitr::include_graphics("Rplot.png")
+```
+
+Problems to be solved
+========================================================
+- SmartEP system software
+- Recording clean ABR's
+- cross-phase analysis

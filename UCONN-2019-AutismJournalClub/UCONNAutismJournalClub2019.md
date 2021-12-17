@@ -63,7 +63,6 @@ Which factors do researchers focus on?
 
 - Child-based factors
 
-1. IQ
 1. Symptom severity
 1. Expressive language measures
 1. Social skills measures
@@ -73,18 +72,9 @@ Goal
 ========================================================
 Try to model as much of the complexity as we can.
 
-Our 6 research questions
-========================================================
-
-1. What do the longitudinal trajectories of *children's* language development look like?
-2. What do the longitudinal trajectories of *parents'* language production look like?
-3. Do parents and children linguistically match each other in conversation?
-4. Which factors best predict child linguistic development?
-5. Are child-based or environmental factors more important to children's linguistic development (and how is this mediated by diagnosis)?
-6. Do children and adults influence each other's later linguistic productions?
-
 Participants
 ========================================================
+Longitudinal Study of Early Language (LSEL) data
 <div style="border: 1px solid #ddd; padding: 0px; overflow-y: scroll; height:500px; overflow-x: scroll; width:100%; "><table class="table table-striped table-hover table-condensed table-responsive" style="margin-left: auto; margin-right: auto;">
  <thead>
   <tr>
@@ -190,6 +180,16 @@ Participants
   </tr>
 </tbody>
 </table></div>
+
+Our 6 research questions
+========================================================
+
+1. What do the longitudinal trajectories of *children's* language development look like?
+2. What do the longitudinal trajectories of *parents'* language production look like?
+3. Do parents and children linguistically match each other in conversation?
+4. Which factors best predict child linguistic development?
+5. Are child-based or environmental factors more important to children's linguistic development (and how is this mediated by diagnosis)?
+6. Do children and adults influence each other's later linguistic productions?
 
 
 Modelling language development
@@ -910,7 +910,7 @@ Our 6 major findings
 
 - Parents who produced **longer MLUs** during a given visit had children who produced more word types and tokens, and had longer MLUs, at the subsequent visit.
 - When both **child EL** at Visit 1 and **parent MLU** were included in the model, both contributed significantly to future child language. However, EL accounted for a greater proportion of the variance.
-- Finally, children’s speech significantly predicted parent speech at the next visit.
+- Finally, children’s MLU significantly predicted parent types at the next visit.
 
 Share and enjoy!
 ========================================================
